@@ -12,6 +12,7 @@ import UIKit
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     var video = AVCaptureVideoPreviewLayer()
+    let session = AVCaptureSession()
     
     @IBOutlet weak var square: UIImageView!
     
@@ -46,8 +47,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         var video = AVCaptureVideoPreviewLayer()
         
         
-        let session = AVCaptureSession()
-        
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
         do
@@ -62,7 +61,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             
             
         }
-        
         
         
         let output = AVCaptureMetadataOutput()
@@ -81,6 +79,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,13 +90,20 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.session.startRunning()
+    }
+    
     
     var QR_name = String()
     
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+
         if metadataObjects != nil && metadataObjects.count != 0
         {
+            self.session.startRunning()
+
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
             {
                 if object.type == AVMetadataObjectTypeQRCode
@@ -106,9 +112,15 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     
                     let alert = UIAlertController(title: QR_name, message: "Aim camera away from code, tap 'Okay' to view options for equipment", preferredStyle: .alert)
                     
-                    alert.addAction(UIAlertAction(title: "Retake / Close", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Retake / Close", style: .default, handler: {(alert: UIAlertAction!) in
+                    
+                        self.session.startRunning()
+                    }))
+
                     
                     alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(alert: UIAlertAction!) in
+                        
+
                         
                         self.performSegue(withIdentifier: "device", sender: self)
                         
@@ -117,16 +129,26 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     
                     present(alert, animated: true, completion: nil)
                 }
+                
+                self.session.stopRunning()
+            
             }
+            
         }
+    
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+
+
         
         if segue.identifier == "device"
         {
             let vc = segue.destination as! DeviceViewController
             vc.equipment = QR_name
+
         }
         
     }
