@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RsD-1y-x0b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sDQ-3b-wB0">
+            <objects>
+                <viewController id="ni5-Dg-3x2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wwq-HK-9Fo"/>
+                        <viewControllerLayoutGuide type="bottom" id="dYw-Id-MdJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugZ-xS-aBk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UVMMedicalCenter_Color" translatesAutoresizingMaskIntoConstraints="NO" id="fus-2T-d0S">
+                                <rect key="frame" x="16" y="64" width="343" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="Yu4-Pw-Sd3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYU-DG-dhd">
+                                <rect key="frame" x="0.0" y="304" width="375" height="39"/>
+                                <color key="backgroundColor" red="0.16376088559999999" green="0.38626429439999999" blue="0.24340425430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Quick Scan &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bzt-at-5F5" kind="show" id="gxN-kK-Bn7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar9-NP-lOY">
+                                <rect key="frame" x="0.0" y="376" width="375" height="39"/>
+                                <color key="backgroundColor" red="0.16376088559999999" green="0.38626429439999999" blue="0.24340425430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="usX-5m-aSb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="eLearn &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ar9-NP-lOY" firstAttribute="trailing" secondItem="EYU-DG-dhd" secondAttribute="trailing" id="87Z-Dy-JCC"/>
+                            <constraint firstItem="dYw-Id-MdJ" firstAttribute="top" secondItem="ar9-NP-lOY" secondAttribute="bottom" constant="252" id="9pQ-RA-d89"/>
+                            <constraint firstItem="fus-2T-d0S" firstAttribute="centerX" secondItem="ugZ-xS-aBk" secondAttribute="centerX" id="Kf1-7d-4UJ"/>
+                            <constraint firstItem="ar9-NP-lOY" firstAttribute="top" secondItem="EYU-DG-dhd" secondAttribute="bottom" constant="33" id="dAk-Hm-I5g"/>
+                            <constraint firstItem="fus-2T-d0S" firstAttribute="leading" secondItem="ugZ-xS-aBk" secondAttribute="leadingMargin" id="e5a-XY-Z3Z"/>
+                            <constraint firstItem="fus-2T-d0S" firstAttribute="centerX" secondItem="EYU-DG-dhd" secondAttribute="centerX" id="hZ4-Sf-twD"/>
+                            <constraint firstItem="fus-2T-d0S" firstAttribute="top" secondItem="Wwq-HK-9Fo" secondAttribute="bottom" id="qC2-RW-FGz"/>
+                            <constraint firstItem="ar9-NP-lOY" firstAttribute="leading" secondItem="EYU-DG-dhd" secondAttribute="leading" id="tww-pf-zXT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t1e-Y0-lZ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orc-qD-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184.8" y="124.58770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hqH-ve-Dmw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RsD-1y-x0b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J5K-pl-YgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ni5-Dg-3x2" kind="relationship" relationship="rootViewController" id="cXo-LD-Nhr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oy4-sp-DsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="124.58770614692655"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="Fcp-7e-KgU">
+            <objects>
+                <viewController id="bzt-at-5F5" customClass="ScannerViewController" customModule="EmergencyDepartment_QR_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OWa-I1-oZc"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZc-Ri-yQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DIQ-R8-teJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_scannerSquare" translatesAutoresizingMaskIntoConstraints="NO" id="8VN-uB-Cfq">
+                                <rect key="frame" x="27" y="173" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="CmS-d0-As1"/>
+                                    <constraint firstAttribute="height" constant="320" id="YuO-qk-504"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8VN-uB-Cfq" firstAttribute="centerX" secondItem="DIQ-R8-teJ" secondAttribute="centerX" id="3D4-vr-9VZ"/>
+                            <constraint firstItem="8VN-uB-Cfq" firstAttribute="centerY" secondItem="DIQ-R8-teJ" secondAttribute="centerY" id="mYh-gO-VTO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="square" destination="8VN-uB-Cfq" id="vmA-be-hQI"/>
+                        <segue destination="zgX-jG-vhE" kind="show" identifier="device" id="eez-Kw-Psk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QP7-Sn-lcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="-557"/>
+        </scene>
+        <!--Device View Controller-->
+        <scene sceneID="ViS-ea-5JI">
+            <objects>
+                <viewController id="zgX-jG-vhE" customClass="DeviceViewController" customModule="EmergencyDepartment_QR_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vZG-cC-C1b"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3B-bj-2Ad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MGY-HV-L7L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhz-7p-7hz">
+                                <rect key="frame" x="16" y="448" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Pwh-BA-zSg"/>
+                                    <constraint firstAttribute="width" constant="343" id="umU-0j-lcl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Step-by-Step Instructions">
+                                    <color key="titleColor" red="0.1647058824" green="0.38431372549999998" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="instructions:" destination="zgX-jG-vhE" eventType="touchUpInside" id="eI8-2I-Z1R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3M-Bair-Hugger-Blanket" translatesAutoresizingMaskIntoConstraints="NO" id="v4D-Cu-XRl">
+                                <rect key="frame" x="16" y="95" width="344" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1v-8L-50L">
+                                <rect key="frame" x="16" y="364" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="KZn-3E-Gtr"/>
+                                    <constraint firstAttribute="height" constant="39" id="l76-Be-sY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Video Resource(s)">
+                                    <color key="titleColor" red="0.1647058824" green="0.38431372549999998" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="video:" destination="zgX-jG-vhE" eventType="touchUpInside" id="dev-VL-W7z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hhz-7p-7hz" firstAttribute="top" secondItem="a1v-8L-50L" secondAttribute="bottom" constant="45" id="5dL-fi-dKT"/>
+                            <constraint firstAttribute="trailing" secondItem="v4D-Cu-XRl" secondAttribute="trailing" constant="15" id="D3q-je-kf7"/>
+                            <constraint firstItem="v4D-Cu-XRl" firstAttribute="centerX" secondItem="MGY-HV-L7L" secondAttribute="centerX" id="JRd-rF-lxi"/>
+                            <constraint firstItem="a1v-8L-50L" firstAttribute="leading" secondItem="MGY-HV-L7L" secondAttribute="leadingMargin" id="KMC-t5-UDZ"/>
+                            <constraint firstItem="a1v-8L-50L" firstAttribute="centerX" secondItem="MGY-HV-L7L" secondAttribute="centerX" id="WSC-4g-qSf"/>
+                            <constraint firstItem="a1v-8L-50L" firstAttribute="trailing" secondItem="MGY-HV-L7L" secondAttribute="trailingMargin" id="YFE-zy-bGP"/>
+                            <constraint firstItem="v4D-Cu-XRl" firstAttribute="top" secondItem="vZG-cC-C1b" secondAttribute="bottom" constant="31" id="dwP-kU-dNY"/>
+                            <constraint firstItem="a1v-8L-50L" firstAttribute="top" secondItem="v4D-Cu-XRl" secondAttribute="bottom" constant="69" id="un3-2t-Qma"/>
+                            <constraint firstItem="v4D-Cu-XRl" firstAttribute="leading" secondItem="MGY-HV-L7L" secondAttribute="leading" constant="16" id="zXH-aj-Vhf"/>
+                            <constraint firstItem="Hhz-7p-7hz" firstAttribute="centerX" secondItem="MGY-HV-L7L" secondAttribute="centerX" id="zvS-bf-1kY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDL-XZ-5Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3M-Bair-Hugger-Blanket" width="300" height="200"/>
+        <image name="QR_scannerSquare" width="512" height="512"/>
+        <image name="UVMMedicalCenter_Color" width="355" height="105"/>
+    </resources>
+    <color key="tintColor" red="0.99615561959999999" green="0.99998772140000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>

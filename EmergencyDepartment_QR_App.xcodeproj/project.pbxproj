@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35E227E81F45D569002B4236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E227E71F45D569002B4236 /* AppDelegate.swift */; };
+		35E227EA1F45D569002B4236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E227E91F45D569002B4236 /* ViewController.swift */; };
+		35E227ED1F45D569002B4236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E227EB1F45D569002B4236 /* Main.storyboard */; };
+		35E227EF1F45D569002B4236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E227EE1F45D569002B4236 /* Assets.xcassets */; };
+		35E227F21F45D569002B4236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E227F01F45D569002B4236 /* LaunchScreen.storyboard */; };
+		35E227FD1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E227FC1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests.swift */; };
+		35E228081F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E228071F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.swift */; };
+		35E228161F45D666002B4236 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E228151F45D666002B4236 /* ScannerViewController.swift */; };
+		35E228181F45D6E9002B4236 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E228171F45D6E9002B4236 /* DeviceViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35E227F91F45D569002B4236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E227DC1F45D569002B4236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E227E31F45D569002B4236;
+			remoteInfo = EmergencyDepartment_QR_App;
+		};
+		35E228041F45D56A002B4236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E227DC1F45D569002B4236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E227E31F45D569002B4236;
+			remoteInfo = EmergencyDepartment_QR_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35E227E41F45D569002B4236 /* EmergencyDepartment_QR_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmergencyDepartment_QR_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E227E71F45D569002B4236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35E227E91F45D569002B4236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35E227EC1F45D569002B4236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35E227EE1F45D569002B4236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E227F11F45D569002B4236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35E227F31F45D569002B4236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E227F81F45D569002B4236 /* EmergencyDepartment_QR_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyDepartment_QR_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E227FC1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyDepartment_QR_AppTests.swift; sourceTree = "<group>"; };
+		35E227FE1F45D56A002B4236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E228031F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyDepartment_QR_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E228071F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyDepartment_QR_AppUITests.swift; sourceTree = "<group>"; };
+		35E228091F45D56A002B4236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E228151F45D666002B4236 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		35E228171F45D6E9002B4236 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35E227E11F45D569002B4236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E227F51F45D569002B4236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E228001F45D56A002B4236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35E227DB1F45D569002B4236 = {
+			isa = PBXGroup;
+			children = (
+				35E227E61F45D569002B4236 /* EmergencyDepartment_QR_App */,
+				35E227FB1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests */,
+				35E228061F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests */,
+				35E227E51F45D569002B4236 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35E227E51F45D569002B4236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E227E41F45D569002B4236 /* EmergencyDepartment_QR_App.app */,
+				35E227F81F45D569002B4236 /* EmergencyDepartment_QR_AppTests.xctest */,
+				35E228031F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E227E61F45D569002B4236 /* EmergencyDepartment_QR_App */ = {
+			isa = PBXGroup;
+			children = (
+				35E227E71F45D569002B4236 /* AppDelegate.swift */,
+				35E227E91F45D569002B4236 /* ViewController.swift */,
+				35E227EB1F45D569002B4236 /* Main.storyboard */,
+				35E228151F45D666002B4236 /* ScannerViewController.swift */,
+				35E228171F45D6E9002B4236 /* DeviceViewController.swift */,
+				35E227EE1F45D569002B4236 /* Assets.xcassets */,
+				35E227F01F45D569002B4236 /* LaunchScreen.storyboard */,
+				35E227F31F45D569002B4236 /* Info.plist */,
+			);
+			path = EmergencyDepartment_QR_App;
+			sourceTree = "<group>";
+		};
+		35E227FB1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				35E227FC1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests.swift */,
+				35E227FE1F45D56A002B4236 /* Info.plist */,
+			);
+			path = EmergencyDepartment_QR_AppTests;
+			sourceTree = "<group>";
+		};
+		35E228061F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35E228071F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.swift */,
+				35E228091F45D56A002B4236 /* Info.plist */,
+			);
+			path = EmergencyDepartment_QR_AppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35E227E31F45D569002B4236 /* EmergencyDepartment_QR_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E2280C1F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_App" */;
+			buildPhases = (
+				35E227E01F45D569002B4236 /* Sources */,
+				35E227E11F45D569002B4236 /* Frameworks */,
+				35E227E21F45D569002B4236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmergencyDepartment_QR_App;
+			productName = EmergencyDepartment_QR_App;
+			productReference = 35E227E41F45D569002B4236 /* EmergencyDepartment_QR_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35E227F71F45D569002B4236 /* EmergencyDepartment_QR_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E2280F1F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_AppTests" */;
+			buildPhases = (
+				35E227F41F45D569002B4236 /* Sources */,
+				35E227F51F45D569002B4236 /* Frameworks */,
+				35E227F61F45D569002B4236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E227FA1F45D569002B4236 /* PBXTargetDependency */,
+			);
+			name = EmergencyDepartment_QR_AppTests;
+			productName = EmergencyDepartment_QR_AppTests;
+			productReference = 35E227F81F45D569002B4236 /* EmergencyDepartment_QR_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35E228021F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E228121F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_AppUITests" */;
+			buildPhases = (
+				35E227FF1F45D56A002B4236 /* Sources */,
+				35E228001F45D56A002B4236 /* Frameworks */,
+				35E228011F45D56A002B4236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E228051F45D56A002B4236 /* PBXTargetDependency */,
+			);
+			name = EmergencyDepartment_QR_AppUITests;
+			productName = EmergencyDepartment_QR_AppUITests;
+			productReference = 35E228031F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35E227DC1F45D569002B4236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "UVM Medical Center";
+				TargetAttributes = {
+					35E227E31F45D569002B4236 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5YTDZDYQG;
+						ProvisioningStyle = Automatic;
+					};
+					35E227F71F45D569002B4236 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5YTDZDYQG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 35E227E31F45D569002B4236;
+					};
+					35E228021F45D56A002B4236 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5YTDZDYQG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 35E227E31F45D569002B4236;
+					};
+				};
+			};
+			buildConfigurationList = 35E227DF1F45D569002B4236 /* Build configuration list for PBXProject "EmergencyDepartment_QR_App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35E227DB1F45D569002B4236;
+			productRefGroup = 35E227E51F45D569002B4236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35E227E31F45D569002B4236 /* EmergencyDepartment_QR_App */,
+				35E227F71F45D569002B4236 /* EmergencyDepartment_QR_AppTests */,
+				35E228021F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E227E21F45D569002B4236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E227F21F45D569002B4236 /* LaunchScreen.storyboard in Resources */,
+				35E227EF1F45D569002B4236 /* Assets.xcassets in Resources */,
+				35E227ED1F45D569002B4236 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E227F61F45D569002B4236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E228011F45D56A002B4236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E227E01F45D569002B4236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E228181F45D6E9002B4236 /* DeviceViewController.swift in Sources */,
+				35E227EA1F45D569002B4236 /* ViewController.swift in Sources */,
+				35E228161F45D666002B4236 /* ScannerViewController.swift in Sources */,
+				35E227E81F45D569002B4236 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E227F41F45D569002B4236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E227FD1F45D56A002B4236 /* EmergencyDepartment_QR_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E227FF1F45D56A002B4236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E228081F45D56A002B4236 /* EmergencyDepartment_QR_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35E227FA1F45D569002B4236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E227E31F45D569002B4236 /* EmergencyDepartment_QR_App */;
+			targetProxy = 35E227F91F45D569002B4236 /* PBXContainerItemProxy */;
+		};
+		35E228051F45D56A002B4236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E227E31F45D569002B4236 /* EmergencyDepartment_QR_App */;
+			targetProxy = 35E228041F45D56A002B4236 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35E227EB1F45D569002B4236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E227EC1F45D569002B4236 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35E227F01F45D569002B4236 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E227F11F45D569002B4236 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35E2280A1F45D56A002B4236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35E2280B1F45D56A002B4236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35E2280D1F45D56A002B4236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		35E2280E1F45D56A002B4236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		35E228101F45D56A002B4236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_AppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmergencyDepartment_QR_App.app/EmergencyDepartment_QR_App";
+			};
+			name = Debug;
+		};
+		35E228111F45D56A002B4236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_AppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmergencyDepartment_QR_App.app/EmergencyDepartment_QR_App";
+			};
+			name = Release;
+		};
+		35E228131F45D56A002B4236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EmergencyDepartment_QR_App;
+			};
+			name = Debug;
+		};
+		35E228141F45D56A002B4236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5YTDZDYQG;
+				INFOPLIST_FILE = EmergencyDepartment_QR_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UVM-Med-Center.EmergencyDepartment-QR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EmergencyDepartment_QR_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35E227DF1F45D569002B4236 /* Build configuration list for PBXProject "EmergencyDepartment_QR_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E2280A1F45D56A002B4236 /* Debug */,
+				35E2280B1F45D56A002B4236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E2280C1F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E2280D1F45D56A002B4236 /* Debug */,
+				35E2280E1F45D56A002B4236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35E2280F1F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E228101F45D56A002B4236 /* Debug */,
+				35E228111F45D56A002B4236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35E228121F45D56A002B4236 /* Build configuration list for PBXNativeTarget "EmergencyDepartment_QR_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E228131F45D56A002B4236 /* Debug */,
+				35E228141F45D56A002B4236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35E227DC1F45D569002B4236 /* Project object */;
+}
