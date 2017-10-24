@@ -25,8 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 20)!
         ]
         UINavigationBar.appearance().titleTextAttributes = attrs
-        
-        
+    
         return true
     }
 

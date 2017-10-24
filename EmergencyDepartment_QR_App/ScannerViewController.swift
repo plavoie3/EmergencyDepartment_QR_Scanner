@@ -110,7 +110,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 {
                     QR_name = object.stringValue
                     
-                    let alert = UIAlertController(title: QR_name, message: "Aim camera away from code, tap 'Okay' to view options for equipment", preferredStyle: .alert)
+                    let alert = UIAlertController(title: QR_name, message: "Select 'Go' to view guide", preferredStyle: .alert)
                     
                     alert.addAction(UIAlertAction(title: "Retake / Close", style: .default, handler: {(alert: UIAlertAction!) in
                     
@@ -118,7 +118,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                     }))
 
                     
-                    alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {(alert: UIAlertAction!) in
+                    alert.addAction(UIAlertAction(title: "Go", style: .default, handler: {(alert: UIAlertAction!) in
+                        
+                        
                         
 
                         
@@ -140,15 +142,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-
-
         
         if segue.identifier == "device"
         {
             let vc = segue.destination as! DeviceViewController
             vc.equipment = QR_name
-
         }
         
     }
